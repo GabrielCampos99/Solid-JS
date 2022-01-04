@@ -1,15 +1,12 @@
 import { createGlobalStyles } from "solid-styled-components";
 
-export const GlobalStyles = () => {
-  const Styles = createGlobalStyles`
-    html,
-    body {
-      background: #808080;
-    }
+export const GlobalStyles = createGlobalStyles`
+  html,
+  body {
+    background: white;
+  }
 
-    * {
-      box-sizing: border-box;
-    }
-  `;
-  return <Styles />;
-};
+  * {
+    box-sizing: border-box;
+  }
+`;
