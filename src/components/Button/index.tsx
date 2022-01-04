@@ -1,7 +1,7 @@
 import type { Component } from "solid-js";
 import * as C from "./styles";
 
-const App: Component = () => {
+const Button: Component = () => {
   return (
     <C.Wrapper>
       <C.Button>Comprar</C.Button>
@@ -9,4 +9,4 @@ const App: Component = () => {
   );
 };
 
-export default App;
+export default Button;
