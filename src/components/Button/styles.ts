@@ -1,9 +1,9 @@
-import { styled } from "solid-styled-components";
+import { styled, css } from "solid-styled-components";
 
 export const Wrapper = styled("div")``;
 
 export const Button = styled("button")`
-  font-family: ${(props) => props.theme.font.family};
+  font-family: ${(props) => props.theme.family};
   margin: 40px;
   padding: 1em 3em;
   border-radius: 5px;
