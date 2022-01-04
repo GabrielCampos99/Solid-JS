@@ -1,12 +1,17 @@
 import type { Component } from "solid-js";
+import { ThemeProvider } from "solid-styled-components";
+
 import Button from "./components/Button";
 import { GlobalStyles } from "./styles/globalStyles";
+import theme from "./styles/theme";
 
 const App: Component = () => {
   return (
     <div>
-      <GlobalStyles />
-      <Button />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Button />
+      </ThemeProvider>
     </div>
   );
 };

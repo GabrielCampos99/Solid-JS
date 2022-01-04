@@ -1,12 +1,14 @@
 import { createGlobalStyles } from "solid-styled-components";
+import theme from "./theme";
 
 export const GlobalStyles = createGlobalStyles`
-  html,
+ html {
+      font-size: 62.5%;
+      box-sizing: border-box;
+    }
   body {
-    background: white;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
+      font-family: ${theme.font.family};
+      font-size: ${theme.font.sizes.medium};
+    }
+    
 `;
