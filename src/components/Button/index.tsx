@@ -1,5 +1,5 @@
-import { Component } from "solid-js";
 import * as C from "./styles";
+import type { Component } from "solid-js";
 
 export type IButton = {
   color?: string;
@@ -7,8 +7,8 @@ export type IButton = {
 
 const Button: Component<IButton> = (props) => {
   return (
-    <C.Wrapper color={props.color}>
-      <C.Button>Comprar</C.Button>
+    <C.Wrapper>
+      <C.Button color={props.color}>Comprar</C.Button>
     </C.Wrapper>
   );
 };
