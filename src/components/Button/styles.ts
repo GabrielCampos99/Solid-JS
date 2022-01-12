@@ -1,6 +1,10 @@
 import { styled } from "solid-styled-components";
 
-export const Wrapper = styled("div")``;
+export const Wrapper = styled("div")(
+  (props) => `
+  border-radius: ${props.theme.colors[props.color!]}px;
+`
+);
 
 export const Button = styled("button")`
   font-family: ${(props) => props.theme.family};
