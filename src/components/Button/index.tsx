@@ -1,12 +1,12 @@
 import * as C from "./styles";
 
-type IButton = {
-  size?: "small" | "medium" | "large";
+export type IButton = {
+  color?: string;
 };
 
-const Button = ({ size = "medium" }: IButton) => {
+const Button = ({ color = "primary" }: IButton) => {
   return (
-    <C.Wrapper size={size}>
+    <C.Wrapper color={color}>
       <C.Button>Comprar</C.Button>
     </C.Wrapper>
   );
