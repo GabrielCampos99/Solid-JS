@@ -10,7 +10,7 @@ const App: Component = () => {
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Button />
+        <Button color="primary" />
       </ThemeProvider>
     </div>
   );
