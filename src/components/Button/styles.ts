@@ -1,6 +1,4 @@
-import { JSX } from "solid-js/jsx-runtime";
 import { css, styled } from "solid-styled-components";
-import { IButton } from ".";
 
 export const Wrapper = styled("div")``;
 

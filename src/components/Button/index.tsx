@@ -1,11 +1,5 @@
 import * as C from "./styles";
 import type { Component } from "solid-js";
-import {
-  BtnBorder,
-  BtnLarge,
-  BtnLargeWithBackgroundBlue,
-  BtnNormal,
-} from "./styles";
 
 export type IButton = {
   color?: string;
