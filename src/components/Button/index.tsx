@@ -9,16 +9,13 @@ import {
 
 export type IButton = {
   color?: string;
+  className?: string;
 };
 
 const Button: Component<IButton> = (props: IButton) => {
   return (
     <C.Wrapper>
-      //In my mind, the perfect way to declare a moddifier is passing like a
-      props. //In the styles, I create a generic button, and some classes:
-      BtnBorder, BtnLarge, BtnSmall... and the class moddifier the component,
-      however, I think that its not a good ideia.
-      <C.Button className={BtnLargeWithBackgroundBlue} color={props.color}>
+      <C.Button className={props.className} color={props.color}>
         Save
       </C.Button>
     </C.Wrapper>
