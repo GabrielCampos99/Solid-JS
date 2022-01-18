@@ -9,8 +9,6 @@ import {
 
 export type IButton = {
   color?: string;
-  size?: string;
-  children?: any;
 };
 
 const Button: Component<IButton> = (props: IButton) => {
